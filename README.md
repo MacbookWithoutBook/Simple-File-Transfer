@@ -10,7 +10,7 @@ With each filename, the client will:
 - Send the filesize to the server (files will be less than 1GB in size)
 - Send all the bytes (less than 1000 bytes at a time) to the server
 - Wait for an ACK from the server that tells the client how many total bytes the server received
-When the file name “DONE” is entered, or "ctrl + c", the client will exit the loop and close the socket.
+- When the file name “DONE” is entered, or "ctrl + c", the client will exit the loop and close the socket
 
 ## Server
 The server will wait for an incoming connection from a client. Once the connection is established, it will loop and do the following:
@@ -31,7 +31,11 @@ The server will wait for an incoming connection from a client. Once the connecti
 4. Enter the file name on the client side: `testPicture.jpg` for instance
 5. Check whether the file is correctly transferred:
    - By checking the prompt, including packet size, ACK, and other useful info
+   ![image](https://github.com/MacbookWithoutBook/Simple-File-Transfer/assets/74396454/2d05cbdd-fb04-44b7-8f52-a8f500fc0fcb)
+   ![image](https://github.com/MacbookWithoutBook/Simple-File-Transfer/assets/74396454/1bb79dba-fe92-4912-98d7-79ad6ccf0acf)
    - By checking the "outputFile_originalFilename" file, which was just written to the current folder
+   ![image](https://github.com/MacbookWithoutBook/Simple-File-Transfer/assets/74396454/bd66b5a5-8cc1-4c59-834c-6cb78424732f)
+
 6. Close the client by entering "DONE" or using "ctrl + c"
 7. Close the server by "ctrl + c" if you want to end the program
 
