@@ -1,5 +1,5 @@
 # Simple-File-Transfer
-This project includes a client and a server capable of performing a simple file transfer from the client to the server.
+This project performs a simple file transfer from a client to a server, using TCP as the transportation layer protocol and IPV4. It's written 100% in C. There are super-detailed comments in client.c and server.c, which shouldn't be too hard to understand :)
 
 # Tasks
 ## Client
@@ -38,4 +38,7 @@ The server will wait for an incoming connection from a client. Once the connecti
 
 6. Close the client by entering "DONE" or using "ctrl + c"
 7. Close the server by "ctrl + c" if you want to end the program
+
+## Existing Issue
+All functions are written in the main function. A better "coding architecture" can be achieved:)
 
